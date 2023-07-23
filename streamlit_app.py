@@ -1,4 +1,4 @@
-import random
+TAimport random
 import pandas as pd
 import streamlit as st
 
@@ -49,8 +49,8 @@ st.dataframe(
             help="Stars",
             format="%d ⭐",
         ),
-        "Distance": st.column_config.ProgressColumn(
-            "Distance",
+        "ETA": st.column_config.ProgressColumn(
+            "ETA",
             help="ETA",
             format="%f miles",
             min_value=0,
