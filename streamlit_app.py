@@ -23,6 +23,13 @@ st.dataframe(
         "shipping time": st.column_config.BarChartColumn(
             "Shipping Days", y_min=0, y_max=30
         ),
+        "sales": st.column_config.ProgressColumn(
+            "Sales volume",
+            help="The sales volume in USD",
+            format="$%f",
+            min_value=0,
+            max_value=1000
+        ),
     },
     hide_index=True,
 )
