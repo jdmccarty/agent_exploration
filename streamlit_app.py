@@ -49,10 +49,10 @@ st.dataframe(
             help="Stars",
             format="%d ⭐",
         ),
-        "ETA": st.column_config.ProgressColumn(
-            "ETA",
+        "Distance": st.column_config.ProgressColumn(
+            "Distance",
             help="ETA",
-            #format="%f miles",
+            format="%f miles",
             min_value=0,
             max_value=3000
         ),
