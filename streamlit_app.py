@@ -1,4 +1,4 @@
-TAimport random
+import random
 import pandas as pd
 import streamlit as st
 
@@ -52,11 +52,10 @@ st.dataframe(
         "ETA": st.column_config.ProgressColumn(
             "ETA",
             help="ETA",
-            format="%f miles",
+            format="$%f",
             min_value=0,
             max_value=3000
         ),
     },
     hide_index=True,
 )
-
