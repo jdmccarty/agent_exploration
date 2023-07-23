@@ -24,12 +24,12 @@ data = {
         "High"
     ],
     "environmental_score": [
-        2, 
-        1
+        4.5, 
+        3
     ],
     "ETA": [
-        "750 miles",
-        "2900 miles"
+        "750",
+        "2900"
     ]
 }
 
@@ -40,8 +40,8 @@ st.dataframe(
     df,
     column_config={
         "product_name": "Product Name",
-        "supplier_name": "Supplier-Name",
-        "address": "Address",
+        "supplier_name": "Supplier Name",
+        #"address": "Address",
         "price": "Price",
         "quality": "Quality",
         "environmental_score": st.column_config.NumberColumn(
