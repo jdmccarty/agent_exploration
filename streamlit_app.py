@@ -13,15 +13,15 @@ df = pd.DataFrame(
 st.dataframe(
     df,
     column_config={
-        "name": "App name",
+        "name": "Supplier Name",
         "stars": st.column_config.NumberColumn(
-            "Github Stars",
-            help="Number of stars on GitHub",
+            "Product Rateing",
+            help="Number of Review Stars",
             format="%d ⭐",
         ),
         "url": st.column_config.LinkColumn("App URL"),
-        "views_history": st.column_config.LineChartColumn(
-            "Views (past 30 days)", y_min=0, y_max=5000
+        "shipping time": st.column_config.BarChartColumn(
+            "Shipping Days", y_min=0, y_max=30
         ),
     },
     hide_index=True,
