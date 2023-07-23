@@ -40,7 +40,7 @@ st.dataframe(
     df,
     column_config={
         "product_name": "Product Name",
-        "supplier_name": "Supplier Name",
+        "supplier_name": "Supplier-Name",
         "address": "Address",
         "price": "Price",
         "quality": "Quality",
