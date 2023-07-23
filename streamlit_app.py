@@ -52,7 +52,7 @@ st.dataframe(
         "ETA": st.column_config.ProgressColumn(
             "ETA",
             help="ETA",
-            format="%f miles",
+            #format="%f miles",
             min_value=0,
             max_value=3000
         ),
