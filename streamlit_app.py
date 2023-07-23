@@ -26,3 +26,4 @@ st.dataframe(
     },
     hide_index=True,
 )
+
