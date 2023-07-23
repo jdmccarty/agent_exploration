@@ -1,15 +1,10 @@
-# Import the streamlit library
 import streamlit as st
+import pandas as pd
+import numpy as np
 
-# Title of the web app
-st.title('My first Streamlit app')
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
 
-# Ask the user for their name
-name = st.text_input('What is your name?')
-
-# Display a welcome message
-if name:
-    st.write(f'Hello, {name}! Welcome to the app!')
-else:
-    st.write('Please enter your name.')
+st.map(df)
 
